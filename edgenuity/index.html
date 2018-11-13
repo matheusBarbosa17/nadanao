@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edgenuity</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        
+        
+        <a href="">
+            <div class="btn">
+                <img src="img/home-grey.png" alt="" style="position: absolute; left: 10px; top: 9px;">
+            </div>
+        </a>
+
+        <div class="btn">
+            <b style="font-size: 13; margin-left: 20px;border: none;">IL-Health</b>
+        </div>
+
+        <a href="">
+                <div class="signout">
+                   <b>Jose Matheus Barbosa</b>
+                </div>
+        </a>
+
+    
+    </div>
+
+    
+    <div class="lesson-info">
+        
+        <h1>Unit Test</h1>
+        <h2>Unit Test <span style="color: white;font-size: 14px; margin-left: 20px;">Started</span></h2>
+            
+    </div>
+
+    <div class="links">
+
+            <nav style="width: 100%; padding-left: 0;">
+                    <ol class="horizontal">
+                            <li><a href=""><div class="link-active">1</div></a></li>
+                            <li><a href=""><div class="link">2</div></a></li>
+                            <li><a href=""><div class="link">3</div></a></li>
+                            <li><a href=""><div class="link">4</div></a></li>
+                            <li><a href=""><div class="link">5</div></a></li>
+                            <li><a href=""><div class="link">6</div></a></li>
+                            <li><a href=""><div class="link">7</div></a></li>
+                            <li><a href=""><div class="link">8</div></a></li>
+                            <li><a href=""><div class="link">9</div></a></li>
+                            <li><a href=""><div class="link">10</div></a></li>
+
+                            <li><a href="11.html"><div class="link" style="border: 1px solid #949393;"><img src="img/arrow-right.png"></div></a></li>
+                    </ol>
+            </nav>
+
+            <div class="countdown">1:<span id="time">00:00</span></div>
+    </div>
+
+   <div class="wrapper">
+
+    <img src="img/side-bar.png" style="height: 90px; left: 225px; position: absolute;">
+
+    <div class="container">
+
+        <div class="question-container">
+            <h2>Returning to a sport after an injury is most dependent upon __________.</h2>
+            <form class="answers-form">
+                <ol>
+                    <li>your tolerance for pain</li>
+                    <li>the type of injury</li>
+                    <li>your personal rate of healing</li>
+                    <li>the type of sport played</li>
+                </ol>
+            </form>
+
+            <form>
+            <ol>
+                <li><span>Please select the best answer from the choices provided.</span></li>
+                <li><br></li>
+                <li><input type="radio" name="choice"> A</li>
+                <li><input type="radio" name="choice"> B</li>
+                <li><input type="radio" name="choice"> C</li>
+                <li><input type="radio" name="choice"> D</li>
+            </ol>
+            </form>
+        </div>
+
+    
+
+        <div class="container-bottom">
+            <a href=""><div class="btn-bottom"><b>Submit</b></div></a>
+            <a href=""><div class="btn-bottom"><b>Next</b></div></a>
+            <a href=""><div class="btn-bottom" style=" width: 145px; background-color: #fcfcfc; box-shadow: 0px -10px 10px #dbdbdb inset; border: 1px solid #8d8e8f; color: black; text-shadow: none; "><b>Save and exit</b></div></a>
+        </div>
+    </div>
+
+</div>
+
+    <footer>
+        
+    </footer>
+</body>
+
+<script>
+    function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        hours = parseInt(timer / 60, 10)
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 60,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
+
+</html>
